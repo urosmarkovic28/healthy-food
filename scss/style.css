@@ -117,8 +117,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #fff;
 }
 
@@ -342,5 +342,92 @@ organic
 }
 .organic .container article h2{
   margin-bottom: 120px;
+}
+/***************
+poruci
+***************/
+.poruci{
+  background: url(../img/bg.jpg);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.poruci article{
+  flex: 1;
+}
+.poruci article img{
+  display: block;
+}
+.poruci article button{
+  padding: 15px 30px;
+  background: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+.poruci article button:hover{
+  background: #221f1a;
+  color: #fff;
+}
+.poruci article:last-child{
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width:768px){
+  .container{
+    width: 100%;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .mainHeader div h1{
+    font-size: 2rem;
+  }
+  .mainHeader div{
+    flex: 0 0 100%;
+    margin: 30px;
+  }
+  .uvod{
+    flex-direction: column;
+  }
+  .zeleno .container{
+    flex-direction: column;
+  }
+  .zeleno .container article{
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .organic .container{
+    flex-direction: column;
+  }
+  .organic .container article{
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .poruci{
+    flex-direction: column;
+  }
+  .poruci article{
+    flex: 0 0 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
