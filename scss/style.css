@@ -34,7 +34,9 @@ a {
 a:hover {
   color: #f8a055;
 }
-
+img{
+  width: 100%;
+}
 ul {
   list-style: none;
 }
@@ -249,5 +251,96 @@ uvod
 .uvod article h4{
   font-size: 1.5rem;
   margin-bottom: 30px;
+}
+/***************
+singleHeaders
+***************/
+.singleHeaders{
+  background-image: linear-gradient(to right, rgba(255,255,255,.99), rgba(255,255,255,.01)), url(../img/header2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.singleHeaders button{
+  padding: 15px 30px;
+  background: #f8a055;
+  border: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+.singleHeaders button:hover{
+  background: #ffa85d;
+}
+.singleHeaders h1{
+  text-shadow: 0 0 2px #221f1a;
+  color: #f8a055;
+  font-size: 3rem;
+}
+/***************
+zeleno
+***************/
+.zeleno{
+  padding: 70px 0;
+  color: #fff;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.zeleno .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.zeleno .container article{
+  flex: 0 0 45%;
+}
+.zeleno .container article p{
+  margin-top: 30px;
+}
+.zeleno .container article h2{
+  margin-bottom: 120px;
+}
+/***************
+organic
+***************/
+.organic{
+  padding: 70px 0;
+  color: #fff;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.organic .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.organic .container article{
+  flex: 0 0 45%;
+}
+.organic .container article p{
+  margin-top: 30px;
+}
+.organic .container article h2{
+  margin-bottom: 120px;
 }
 /*# sourceMappingURL=style.css.map */
