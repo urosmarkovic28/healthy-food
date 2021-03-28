@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+$fontFamily: 'Open Sans', sans-serif;
+$fontSize: 16px;
+$orange: #f8a055;
+$black: #221f1a;
+$gray: #5a574e;
+$green: #988d51;
+$white:#fff;
+$transition: .4s ease;
+$padding: 70px 0;
+$textShadow: 0 0 2px  $black;
+/***************
+mixin
+***************/
+@mixin flex($justify,$align, $direction, $wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+@mixin bgImg($position,$size,$repeat,$height){
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+    height: $height;
+}
+@mixin btn (){
+    padding: 15px 30px;
+    background: $orange;
+    border: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        background: lighten($color: $orange, $amount: 5%);
+    }
+}
+/***************
+basic styles
+***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: 1.7;
+    color: $black;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    color: $black;
+    text-decoration: none;
+    transition: $transition;
+    &:hover{
+        color: $orange;
+    }
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size: 3rem;
+}
+/***************
+Nav
+***************/
+nav{
+    .container{
+        @include flex(space-between, center, row, wrap);
+        ul{
+            @include flex(center,center,row,wrap);
+            li{
+                margin-left: 50px;
+            }
+        }
+        .logo{
+            color: $orange;
+            font-size: 2rem;
+            font-weight: 800;
+            span{
+                font-weight: 300;
+                color: $black;
+                font-style: italic;
+            }
+        }
+    }
+}
+/***************
+Footer
+***************/
+footer{
+   @include flex(center, stretch, row, nowrap);
+   color: $white;
+   article:first-child{
+       flex: 7;
+       background: $gray;
+       padding: 80px;
+       h3{
+           padding-bottom: 30px;
+       }
+    }
+    article:last-child{
+        flex: 5;
+        background: $orange;
+        padding: 80px;
+        h2{
+            position: relative;
+            top: -30px;
+        }
+        i{
+            text-shadow: 0 0 2px $black;
+        }
+    }
+}
+/***************
+bottomBar
+***************/
+.bottomBar{
+    text-align: center;
+    padding: 10px;
+    a{
+        color: $orange;
+        &:hover{
+            color: $black;
+        }
+    }
+}
+/***************
+mainHeader
+***************/
+.mainHeader{
+    
+    
+    @include flex(flex-start,center,row,wrap);
+    div{
+        flex: 0 0 40%;
+        margin-left: 10%;
+        padding: 50px;
+        background: linear-gradient(to right, rgba($white,.01), rgba($white,.99));
+    }
+}

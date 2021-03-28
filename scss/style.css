@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+/***************
+mixin
+***************/
+/***************
+basic styles
+***************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #221f1a;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  color: #221f1a;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+a:hover {
+  color: #f8a055;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/***************
+Nav
+***************/
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav .container ul li {
+  margin-left: 50px;
+}
+
+nav .container .logo {
+  color: #f8a055;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+nav .container .logo span {
+  font-weight: 300;
+  color: #221f1a;
+  font-style: italic;
+}
+
+/***************
+Footer
+***************/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #fff;
+}
+
+footer article:first-child {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  background: #5a574e;
+  padding: 80px;
+}
+
+footer article:first-child h3 {
+  padding-bottom: 30px;
+}
+
+footer article:last-child {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background: #f8a055;
+  padding: 80px;
+}
+
+footer article:last-child h2 {
+  position: relative;
+  top: -30px;
+}
+
+footer article:last-child i {
+  text-shadow: 0 0 2px #221f1a;
+}
+
+/***************
+bottomBar
+***************/
+.bottomBar {
+  text-align: center;
+  padding: 10px;
+}
+
+.bottomBar a {
+  color: #f8a055;
+}
+
+.bottomBar a:hover {
+  color: #221f1a;
+}
+
+/***************
+mainHeader
+***************/
+.mainHeader {
+  background-image:linear-gradient(to right, rgba(255,255,255,.99),rgba(255,255,255,.01)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainHeader div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+          margin-left: 10%;
+          padding: 50px;
+          background: linear-gradient(to right,rgba(255,255,255,.01), rgba(255,255,255,.99));
+}
+.mainHeader div h1{
+  font-size: 3.3rem;
+  color: #f8a055;
+  text-shadow: 0 0 2px #221f1a;
+}
+.mainHeader div button{
+  padding: 15px 30px;
+  background: #f8a055;
+  border: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .4s ease;
+}
+.mainHeader div button:hover{
+  background: #ffa85d;
+}
+/*# sourceMappingURL=style.css.map */
